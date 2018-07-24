@@ -1,0 +1,239 @@
+* {
+    overflow: auto; 
+    margin: 0;
+    padding: 0;
+    }
+
+
+header
+{
+	top: 0%;
+	height: 20px;
+	background-color:transparent;
+	color:yellow;
+	font-family: 'Permanent Marker', cursive;
+}
+body{
+    overflow:hidden;
+    width: 100%;
+    height: auto;
+	zoom:85%;
+    background-color:white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(192, 251, 255);
+    height: 40px;
+    padding: 14px 16px;
+}
+
+li {
+    float: left;
+	font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+    font-weight: bold
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width:150px; /* fixed width */
+    text-decoration:none; 
+}
+li a:hover {
+    background-color: white;
+}
+
+            ul span {
+                float: right;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            footer {
+                padding: 1em;
+                color: black;
+                background-color: rgb(192, 251, 255);
+                clear: left;
+                text-align: center;
+                text-emphasis-position: above;
+                position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               height: 40%;
+                font-family: 'Permanent Marker', cursive;
+            }
+            .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+input
+{
+    color: black;
+    width: 10%;
+    padding: 2px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+select
+{
+    color: black;
+    width: 15%;
+    height: 5%;
+    padding: 2px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.h1
+{
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    left: 10%
+}
+.h2
+{
+    top: 10px;
+    left: 550px;
+}
+.h3
+{
+    top: 10px;
+    left: 600px;
+}
+.h4
+{
+    top: 10px;
+    left: 650px;
+}
+button
+{
+	background-color: rgb(192, 251, 255);
+    border: none;
+    color:black;
+    padding: 5px 3px;
+    text-align: center;
+    text-decoration:black;
+    border: 2px solid grey;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+
+}
+input[type=submit]
+{
+	background-color: rgb(192, 251, 255);
+    border: none;
+    color:black;
+    padding: 5px 3px;
+    text-align: center;
+    text-decoration:black;
+    border: 2px solid grey;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+
+}
+input[type=checkbox] {
+    height: 3%;
+    width: 3%;
+}
+img {
+    height: 100px;
+    width: 200px;
+}
+.star{
+    height: 30px;
+    width: 30px;
+}
+.about{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+.container {
+    position: relative; 
+    width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.1); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+.starContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+.starText {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+tr
+{
+    padding: 0%;
+    margin: 0%;
+    vertical-align: top;
+}

@@ -1,0 +1,55 @@
+<div ng-init="homeCtrl.initThreeRandom()"></div>
+<div class= "container"> 
+        <img src= "https://steemitimages.com/DQmYT7dcFNsYRV66Cutdia8ZJiqdY4pe96YL8kBHjMVshUJ/amsterdam-in-3-zile-1.jpg" style= "width:100%; height:43%">
+        <div class="content">
+                <label for="userName" id="userNamelbl" ng-show="$root.loginPressed">User Name:</label>
+                <input type="text" name="userName" ng-model="userName" ng-show="$root.loginPressed">
+                <br>
+                <label for="password" id="passswordlbl" ng-show="$root.loginPressed">Password:</label>
+                <input type="password" name="password" ng-model="password" ng-show="$root.loginPressed" >
+                <br>
+                <button ng-click="homeCtrl.login()" ng-show="$root.loginPressed"> Login</button>
+                <br>
+                <button ng-click="homeCtrl.moveToRet()" ng-show="$root.loginPressed"> forgot password?</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+        </div>
+</div>
+
+<footer>
+
+        <table>
+                <tr>          
+                        <td ng-repeat="poi in homeCtrl.threePois" style="width:500px; height:100%;">
+                                name:
+                                <a ng-click="homeCtrl.getPOIDet(poi.name)"> {{poi.name}}</a>     
+                                <br>
+                                <img ng-click="homeCtrl.getPOIDet(poi.name)" ng-style="{'height': '100px'}" ng-src="{{poi.image}} ">
+                             
+                                <div ng-show="homeCtrl.boolMap[poi.name]">
+                                        views:
+                                        {{$root.pois[homeCtrl.indexOf(poi)].views+1}}
+                                       <br> 
+                                      Description:
+                                       <span >{{poi.description}}</span>
+                                       <br>
+                                       Rank:
+                                       {{poi.rank}}
+                                       <br>
+                                       feedbacks:
+                                       <br>
+                                       <span >{{$root.pois[homeCtrl.indexOf(poi)].feedback1}}</span>,  <span >{{$root.pois[homeCtrl.indexOf(poi)].date1}}</span>
+                                       <br>
+                                       <span >{{$root.pois[homeCtrl.indexOf(poi)].feedback2}}</span>,  <span >{{$root.pois[homeCtrl.indexOf(poi)].date2}}</span>
+                                       <br>
+                                      </div>
+
+                        </td>
+                 </tr>          
+        </table>
+</footer>
+
+<!--<p>{{homeCtrl.loginres}}</p>
